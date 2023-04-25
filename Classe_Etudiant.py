@@ -86,7 +86,7 @@ class Etudiant:
 """
 
     def serialisation(self, p_fichier):
-        self.__dict__["_Etudiant__date_naiss"]=str(self.Naiss.year()) + str(self.Naiss.month()) + str(self.Naiss.day())
+        self.__dict__["_Etudiant__date_naiss"]=str(self.Naiss.year()) + "-" + str(self.Naiss.month()) + "-" + str(self.Naiss.day())
 
         try:
             with open(p_fichier, "w") as f:
